@@ -1,10 +1,10 @@
 package com.curriculumvitae;
 
-public class Cuentas {
+public class Cuenta {
     
     private String nombre;
     
-    public Cuentas (String nombre) {
+    public Cuenta (String nombre) {
          this.nombre = nombre;  
     }
 

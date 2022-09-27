@@ -1,17 +1,22 @@
 package com.curriculumvitae;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Curriculum {
 
     private String nombre;
     private int edad;
     private String lugarProcedencia;
     private String experiencia;
-    
-    public Curriculum (String nombre, int edad, String lugarProcedencia, String experiencia){
+    private List<Cuenta> cuentas;
+
+    public Curriculum(String nombre, int edad, String lugarProcedencia, String experiencia) {
         this.nombre = nombre;
         this.edad = edad;
         this.lugarProcedencia = lugarProcedencia;
         this.experiencia = experiencia;
+        this.cuentas = new ArrayList<Cuenta>();
     }
 
     public String getNombre() {
@@ -46,4 +51,7 @@ public class Curriculum {
         this.experiencia = experiencia;
     }
 
+    public void agregarCuenta(Cuenta cuenta) {
+        this.cuentas.add(cuenta);
+    }
 }

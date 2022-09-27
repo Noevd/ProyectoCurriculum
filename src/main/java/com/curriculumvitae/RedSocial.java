@@ -1,11 +1,11 @@
 package com.curriculumvitae;
 
-public class redesSociales {
+public class RedSocial {
     
     private String redireccion;
     private String agregarQuitarCuenta;
     
-    public redesSociales (String redireccion, String agregarQuitarCuenta) {
+    public RedSocial (String redireccion, String agregarQuitarCuenta) {
         this.redireccion = redireccion;
         this.agregarQuitarCuenta = agregarQuitarCuenta;
     }

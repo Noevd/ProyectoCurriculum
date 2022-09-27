@@ -1,11 +1,11 @@
 package com.curriculumvitae;
 
-public class Skills {
+public class Skill {
 
     private String nombre;
     private short nivel;
 
-    public Skills(String nombre, short nivel) {
+    public Skill(String nombre, short nivel) {
         this.nombre = nombre;
         this.nivel = nivel;
     }

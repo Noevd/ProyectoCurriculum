@@ -1,13 +1,13 @@
 package com.curriculumvitae;
 
-public class Proyectos {
+public class Proyecto {
 
     private String nombre;
     private String descripcion;
     private short ano;
     private String direccionRepositorio;
     
-    public Proyectos (String nombre, String descripcion, short ano, String direccionRepositorio) {
+    public Proyecto (String nombre, String descripcion, short ano, String direccionRepositorio) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.ano = ano;

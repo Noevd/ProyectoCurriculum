@@ -8,6 +8,7 @@ classDiagram
         -educacion: string
         -lugardeprocedencia: string
         -experiencia: string
+        -cuentas: List~Cuenta~
     }
 
     class Cursada{
