@@ -10,6 +10,9 @@ public class Curriculum {
     private String lugarProcedencia;
     private String experiencia;
     private List<Cuenta> cuentas;
+    private List<Proyecto> proyectos; 
+    private List<Cursada> cursadas;
+    private List<Skill> skills; 
 
     public Curriculum(String nombre, int edad, String lugarProcedencia, String experiencia) {
         this.nombre = nombre;
@@ -17,6 +20,9 @@ public class Curriculum {
         this.lugarProcedencia = lugarProcedencia;
         this.experiencia = experiencia;
         this.cuentas = new ArrayList<Cuenta>();
+        this.proyectos = new ArrayList<Proyecto>();
+        this.cursadas = new ArrayList<Cursada>();
+        this.skills = new ArrayList<Skill>();
     }
 
     public String getNombre() {
@@ -53,5 +59,17 @@ public class Curriculum {
 
     public void agregarCuenta(Cuenta cuenta) {
         this.cuentas.add(cuenta);
+    }
+    
+    public void agregarProyecto(Proyecto proyecto) {
+        this.proyectos.add(proyecto);
+    }
+    
+    public void agregarCursada (Cursada cursada) {
+        this.cursadas.add(cursada);
+    }
+    
+    public void agregarSkill (Skill skill) {
+        this.skills.add(skill);
     }
 }

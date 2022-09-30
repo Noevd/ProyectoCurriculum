@@ -5,11 +5,21 @@ public class Cursada {
     private short anoIngreso;
     private short anoEgreso;
     private String titulo;
+    private EstablecimientoEducativo establecimientoEducativo;
 
     public Cursada(short anoIngreso, short anoEgreso, String titulo) {
         this.anoIngreso = anoIngreso;
         this.anoEgreso = anoEgreso;
         this.titulo = titulo;
+        this.establecimientoEducativo = establecimientoEducativo;
+    }
+    
+    public EstablecimientoEducativo getEstablecimientoEducativo() {
+        return establecimientoEducativo;
+    }
+
+    public void setEstablecimientoEducativo(EstablecimientoEducativo establecimientoEducativo) {
+        this.establecimientoEducativo = establecimientoEducativo;
     }
 
     public short getAnoIngreso() {

@@ -26,33 +26,34 @@ classDiagram
 
     Cursada o-- EstablecimientoEducativo
 
-    InfoCV o-- Skills
+    InfoCV o-- Skill
 
-    InfoCV *-- Cuentas
+    InfoCV *-- Cuenta
 
-    Cuentas o-- RedesSociales
+    Cuenta o-- RedSocial
 
-    InfoCV o-- Proyectos
+    InfoCV o-- Proyecto
 
     InfoCV *-- Cursada
 
-    class Cuentas {
+    class Cuenta {
         -nombre: string
+        -redSocial: RedSocial
     }
 
-    class RedesSociales {
-        -Redireccion: string
+    class RedSocial {
+        -direccion: string
         -agregarquitarcuenta: string
     }
 
-    class Proyectos {
+    class Proyecto {
         -nombre: string
         -descripción: string
         -año: short
         -direccionrepositorio: string     
     }
 
-    class Skills {
+    class Skill {
         -nombre: string
         -nivel: short
     }
