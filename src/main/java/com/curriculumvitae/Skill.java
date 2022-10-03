@@ -4,10 +4,12 @@ public class Skill {
 
     private String nombre;
     private short nivel;
+    private long id;
 
-    public Skill(String nombre, short nivel) {
+    public Skill(String nombre, short nivel, long id) {
         this.nombre = nombre;
         this.nivel = nivel;
+        this.id = id;
     }
 
     public String getNombre() {

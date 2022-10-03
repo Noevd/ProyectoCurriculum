@@ -4,10 +4,12 @@ public class Cuenta {
     
     private String nombre;
     private RedSocial redSocial;
+    private long id;
     
-    public Cuenta (String nombre, RedSocial redSocial) {
+    public Cuenta (String nombre, RedSocial redSocial, long id) {
          this.nombre = nombre;  
          this.redSocial = redSocial;
+         this.id = id;
     }
 
     public RedSocial getRedSocial() {

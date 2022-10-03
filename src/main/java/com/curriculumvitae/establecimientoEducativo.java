@@ -6,12 +6,14 @@ public class EstablecimientoEducativo {
     private String direccion;
     private String titulo;
     private short anoEgreso;
+    private long id;
 
-    public EstablecimientoEducativo(String nombre, String direccion, String titulo, short anoEgreso) {
+    public EstablecimientoEducativo(String nombre, String direccion, String titulo, short anoEgreso, long id) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.titulo = titulo;
         this.anoEgreso = anoEgreso;
+        this.id = id;
     }
 
     public String getNombre() {

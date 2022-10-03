@@ -6,12 +6,14 @@ public class Proyecto {
     private String descripcion;
     private short ano;
     private String direccionRepositorio;
+    private long id;
     
-    public Proyecto (String nombre, String descripcion, short ano, String direccionRepositorio) {
+    public Proyecto (String nombre, String descripcion, short ano, String direccionRepositorio, long id) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.ano = ano;
         this.direccionRepositorio = direccionRepositorio;
+        this.id = id;
     }   
     
     public String getNombre() {

@@ -6,12 +6,14 @@ public class Cursada {
     private short anoEgreso;
     private String titulo;
     private EstablecimientoEducativo establecimientoEducativo;
+    private long id;
 
-    public Cursada(short anoIngreso, short anoEgreso, String titulo) {
+    public Cursada(short anoIngreso, short anoEgreso, String titulo, long id) {
         this.anoIngreso = anoIngreso;
         this.anoEgreso = anoEgreso;
         this.titulo = titulo;
         this.establecimientoEducativo = establecimientoEducativo;
+        this.id = id;
     }
     
     public EstablecimientoEducativo getEstablecimientoEducativo() {

@@ -13,8 +13,9 @@ public class Curriculum {
     private List<Proyecto> proyectos; 
     private List<Cursada> cursadas;
     private List<Skill> skills; 
+    private long id;
 
-    public Curriculum(String nombre, int edad, String lugarProcedencia, String experiencia) {
+    public Curriculum(String nombre, int edad, String lugarProcedencia, String experiencia, long id) {
         this.nombre = nombre;
         this.edad = edad;
         this.lugarProcedencia = lugarProcedencia;
@@ -23,6 +24,7 @@ public class Curriculum {
         this.proyectos = new ArrayList<Proyecto>();
         this.cursadas = new ArrayList<Cursada>();
         this.skills = new ArrayList<Skill>();
+        this.id = id;
     }
 
     public String getNombre() {
